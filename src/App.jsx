@@ -4,6 +4,7 @@ import Desafio1App from './desafio1/App';
 import Desafio2App from './desafio2/App';
 import Desafio3App from './desafio3/App';
 import Desafio4app from './desafio4/App';
+import Counter from './desafio5/App';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Route path="/desafio2" element={<Desafio2App/>} />
       <Route path="/desafio3" element={<Desafio3App/>} />
       <Route path="/desafio4" element={<Desafio4app/>} />
+      <Route path="/desafio5" element={<Counter/>} />
     </Routes>
   );
 }

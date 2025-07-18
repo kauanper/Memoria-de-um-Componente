@@ -5,6 +5,7 @@ const apps = [
   { name: "Challenge 02", url: "/desafio2" },
   { name: "Challenge 03", url: "/desafio3" },
   { name: "Challenge 04", url: "/desafio4" },
+  { name: "Challenge 05", url: "/desafio5" },
 ];
 
 export default function Menu() {
