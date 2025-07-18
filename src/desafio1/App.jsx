@@ -6,9 +6,16 @@ export default function Desafio1App() {
       style={{
         fontFamily: 'sans-serif',
         padding: '2rem',
-        maxWidth: 600,
+        maxWidth: 900,
+        color: '#000000ff',
         margin: 'auto',
         textAlign: 'center',
+
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
       }}
     >
       <Gallery />

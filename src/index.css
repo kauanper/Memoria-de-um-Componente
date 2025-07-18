@@ -13,6 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+  display: flex;
+  place-items: center; /* alinha vertical e horizontalmente */
+  justify-content: center; /* alinha horizontalmente */
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -20,14 +30,6 @@ a {
 }
 a:hover {
   color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -45,6 +47,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: #ff00ff; /* cor magenta para combinar com seu menu */
 }
 button:hover {
   border-color: #646cff;
@@ -59,10 +62,14 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+  html, body, #root {
+    background-color: #ffffff;
+  }
   a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
+    color: #646cff;
   }
 }
