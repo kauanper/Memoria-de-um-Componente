@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 const apps = [
   { name: "Challenge 01", url: "/desafio1" },
   { name: "Challenge 02", url: "/desafio2" },
-  { name: "Challenge 03", url: "/app3" },
-  { name: "Challenge 04", url: "/app4" },
+  { name: "Challenge 03", url: "/desafio3" },
+  { name: "Challenge 04", url: "/desafio4" },
 ];
 
 export default function Menu() {
