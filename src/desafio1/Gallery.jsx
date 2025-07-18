@@ -21,10 +21,9 @@ export default function Gallery() {
   return (
     <>
       <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '1rem' }}>
-        <button onClick={handlePrevClick} disabled={index === 0}>
-          Previous
-        </button>
-        <button onClick={handleNextClick}>Next</button>
+        <button onClick={handlePrevClick} disabled={index === 0}> &lt;&lt; </button>
+        <button onClick={handleNextClick}> &gt;&gt; </button>
+
       </div>
 
       <h2>
