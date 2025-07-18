@@ -1,16 +1,14 @@
-import { useState } from 'react';
-
-export default function Desafio4app() {
-  const [name, setName] = useState('');
-
+export default function FeedbackForm() {
   function handleClick() {
-    setName(prompt('What is your name?'));
+    const name = prompt('What is your name?');
     alert(`Hello, ${name}!`);
   }
 
   return (
-    <button onClick={handleClick}>
-      Greet
-    </button>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <button onClick={handleClick}>
+        Greet
+      </button>
+    </div>
   );
 }
