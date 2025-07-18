@@ -3,27 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React.js - Fundamentos</title>
+    <title>State: A Memória de um Componente</title>
   </head>
   <body>
     <div id="root"></div>
 
-    <!-- React e Babel -->
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- Componente inline -->
     <script type="text/babel">
+      const apps = [
+        { name: "Challenge 01", url: "./app1/index.html" },
+        { name: "Challenge 02", url: "./app2/index.html" },
+        { name: "Challenge 03", url: "./app3/index.html" },
+        { name: "Challenge 04", url: "./app4/index.html" },
+      ];
+
       function App() {
+        const openApp = (url) => {
+          window.open(url, "_blank");
+        };
+
         return (
-          <div>
-            <h1>Testando... </h1>
+          <div style={{ fontFamily: "sans-serif", padding: "2rem", background: "#f5f5f5" }}>
+            <h1 style={{ textAlign: "center" }}>State: A Memória de um Componente</h1>
+            <ul style={{ listStyle: "none", padding: 0 }}>
+              {apps.map((app) => (
+                <li key={app.url} style={{ margin: "1rem 0" }}>
+                  <button
+                    onClick={() => openApp(app.url)}
+                    style={{
+                      fontSize: "1.2rem",
+                      cursor: "pointer",
+                      background: "none",
+                      border: "none",
+                      color: "#007bff",
+                      textDecoration: "underline",
+                      padding: 0,
+                      fontFamily: "inherit",
+                    }}
+                  >
+                    {app.name}
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
         );
       }
 
-      const root = ReactDOM.createRoot(document.getElementById('root'));
+      const root = ReactDOM.createRoot(document.getElementById("root"));
       root.render(<App />);
     </script>
   </body>
